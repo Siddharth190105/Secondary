@@ -2,11 +2,10 @@ name: Build the CI job for nodejs application
 on:
   push:
     branches:
-      - ci-cd-branch
+      - ci-branch
   pull_request:
     branches:
       - main
-
 
 jobs: 
   build:
@@ -34,4 +33,3 @@ jobs:
         with:
           name: nodejs-app-artifacts
           path: ./
-      - name: Get the user_name and password from github
