@@ -27,7 +27,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Deployment completed
         run: echo "Deployment completed successfully"
-      # - name: start the node services
+      # - name: start node services
       #   run: |
       #     cd nodejs-app-artifacts
       #     npm install
